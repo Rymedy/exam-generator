@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="src/images/favicon.ico" type="image/x-icon"/>
+	<title>Exam Generator</title>
+	<link rel="stylesheet" href="styles.css">
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		MathJax = {
+			tex: {
+				inlineMath: [['$', '$'], ['\\(', '\\)']]
+			},
+			svg: {
+				fontCache: 'global'
+			}
+		};
+	</script>
+	<br>
+	<center><h1>Exam Paper Generator</h1></center>
+	<div id="settingsContainer">
+		<center><div id="numberOfQuestionsContainer">
+			<label>Number of Questions: </label><input id="numberOfQuestions" type="range" value="27" min="5" max="27" oninput="this.nextElementSibling.value = this.value"/>
+			<output>27</output>
+		</div></center>
+		<br>
+		<center><button class="generateButton" role="button" onclick="createExam();">Generate Paper</button></center>
+	</div>
+	<div id="examPaper">
+	</div>
+</body>
+<!-- Scripts -->
+<script src="questionBank.js"></script>
+<script src="index.js"></script>
+</html>
