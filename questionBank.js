@@ -117,7 +117,7 @@ function questionBank() {
 	let trigQuestionThree = new Question("Prove $4sin75^osin15^o = 1$", "", "", "", "", "", "", "", "", "")
 	// Perms and Combs Questions
 	let permCombQuestionOne = new Question("Simplify the following:", "(a) ${(n-1)! \\over n!}$", "(b) $(n-1)!-n!$", "", "", "", "", "", "", "")
-	let permCombQuestionTwo = new Question("Find the value of n:", "(a) ${}_n \\mathrm{ C }_2 = 90$", "(b) ${}_n \\mathrm{ C }_3 = 6n$", "(c) ${}_n \\mathrm{ C }_7 = 8\\times{}_n \\mathrm{ C }_6$", "", "", "", "", "", "")
+	let permCombQuestionTwo = new Question("Find the value of n:", "(a) ${}^n \\mathrm{ C }_2 = 90$", "(b) ${}^n \\mathrm{ C }_3 = 6n$", "(c) ${}^n \\mathrm{ C }_7 = 8\\times{}^n \\mathrm{ C }_6$", "", "", "", "", "", "")
 	let permCombQuestionThree = new Question("How many different  four digit numbers may be formed from the digits 1, 2, 3, 4, 5, 6, 7, 8, 9 if:", "(a) none of the digits may be repeated?", "(b) the digits may be repeated?", "", "", "", "", "", "", "")
 	let permCombQuestionFour = new Question("In how many ways can a committee of three people from four married couples be selected if:", "(a) all are equally eligible?", "(b) the committee must consist of two men and a woman?", "(c) the committee must consist of at least one woman?", "(d) husband and wife cannot serve on the same committee?", "", "", "", "", "")
 	let permCombQuestionFive = new Question("Arthur, Guinevere, Lancelot, Bors and Percival sit around a round table. Find how many ways this can be done:", "(a) without restriction,", "(b) if Guinevere sits at Arthur's right hand,", "(c) if Guinevere sits between Lancelot and Bors,", "(d) if Arthur and Lancelot do not sit together.", "", "", "", "", "")
@@ -125,6 +125,10 @@ function questionBank() {
 	let permCombQuestionSeven = new Question("In how many ways can the letters of the word PARRAMATTA be arranged if the R's are to be seperated?", "", "", "", "", "", "A. 41250", "B. 30300", "C. 24500", "D. 50320")
 	let permCombQuestionEight = new Question("A class contains 15 students of whom 5 are prefects. How many committees of 8 can be formed, each containing", "(a) exactly 2 prefects?", "(b) at least 2 prefects?", "", "", "", "", "", "", "")
 	let permCombQuestionNine = new Question("If the letters of MATHEMATICS are used to form a word, using all letters, what is the probability of that the letters { ICE } stay together?", "", "", "", "", "", "", "", "", "")
+	// Binomial Theorem Questions
+	let bionomialQuestionOne = new Question("Expand $\\sum_{k=0}^4 {}^4 \\mathrm{ C }_k(3x)^{4-k}(-{y \\over 2})^k$", "", "", "", "", "", "", "", "", "")
+	let bionomialQuestionTwo = new Question("Write the following binomial expressions in sigma notation:", "(a) $(1 - 2x)^4$", "(b) $(x + 3y)^7$", "(c) $(2x - {1 \\over x^2})^5$", "", "", "", "", "", "")
+	let bionomialQuestionThree = new Question("Find the coefficient of $x^4$ in the expansion of $\\sum_{k=0}^9 {9 \\choose k}(2)^{9-k}(-{x \\over 3})^k$", "", "", "", "", "", "", "", "", "")
 
 	return [
 	polynomialQuestionOne,
@@ -153,6 +157,9 @@ function questionBank() {
 	permCombQuestionSix,
 	permCombQuestionSeven,
 	permCombQuestionEight,
-	permCombQuestionNine
+	permCombQuestionNine,
+	bionomialQuestionOne,
+	bionomialQuestionTwo,
+	bionomialQuestionThree
 	]
 }
