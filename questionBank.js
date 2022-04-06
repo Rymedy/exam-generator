@@ -111,6 +111,7 @@ function questionBank() {
 	// Calculus Questions
 	let calculusQuestionOne = new Question("A large storage tank is conical in shape. The diameter of the tank at its top is 4m and the tank is 3m high. If $r$ is the radius of a tank at height $h$ m", "(a) Show that r = ${2h \\over 3}$", "(b) if water is flowing into the tank at a constant rate of 0.008 $m^3s^-1$ show that the height of water is increasing at the rate ${dh \\over dt} = {0.018 \\over \\pi h^2}$", "(c) At what rate is the water level rising when the tank is half full?", "", "", "", "", "", "")
 	let calculusQuestionTwo = new Question("A sphereical balloon is being inflated and its radius is increasing at the rate of 2cm/min. At what rate is the volume increasing when the radius of the balloon is 7cm?", "", "", "", "", "", "", "", "", "")
+	let calculusQuestionThree = new Question("Given that ${dM \\over dr} = 5$ and ${dM \\over dt} = 5t^3$, find the value of ${dr \\over dt}$ when $t = 2$.", "", "", "", "", "", "(A) 8", "(B) 12", "(C) 200", "(D) 300")
 	// Trig Questions
 	let trigQuestionOne = new Question("Find the exact value of $sec105^o$.", "", "", "", "", "", "", "", "", "")
 	let trigQuestionTwo = new Question("Prove $sin(\\alpha + \\beta)sin(\\alpha - \\beta) = sin^2\\alpha - sin^2\\beta$", "", "", "", "", "", "", "", "", "")
@@ -125,10 +126,18 @@ function questionBank() {
 	let permCombQuestionSeven = new Question("In how many ways can the letters of the word PARRAMATTA be arranged if the R's are to be seperated?", "", "", "", "", "", "A. 41250", "B. 30300", "C. 24500", "D. 50320")
 	let permCombQuestionEight = new Question("A class contains 15 students of whom 5 are prefects. How many committees of 8 can be formed, each containing", "(a) exactly 2 prefects?", "(b) at least 2 prefects?", "", "", "", "", "", "", "")
 	let permCombQuestionNine = new Question("If the letters of MATHEMATICS are used to form a word, using all letters, what is the probability of that the letters { ICE } stay together?", "", "", "", "", "", "", "", "", "")
+	let permCombQuestionTen = new Question("A hotel has 106 rooms and has some travellers expected to stay on a given night. What number of travellers would require the hotel to allocate at least 3 people to at least one room?", "", "", "", "", "", "(A) 107", "(B) 212", "(C) 213", "(D) 319")
 	// Binomial Theorem Questions
 	let bionomialQuestionOne = new Question("Expand $\\sum_{k=0}^4 {}^4 \\mathrm{ C }_k(3x)^{4-k}(-{y \\over 2})^k$", "", "", "", "", "", "", "", "", "")
 	let bionomialQuestionTwo = new Question("Write the following binomial expressions in sigma notation:", "(a) $(1 - 2x)^4$", "(b) $(x + 3y)^7$", "(c) $(2x - {1 \\over x^2})^5$", "", "", "", "", "", "")
 	let bionomialQuestionThree = new Question("Find the coefficient of $x^4$ in the expansion of $\\sum_{k=0}^9 {9 \\choose k}(2)^{9-k}(-{x \\over 3})^k$", "", "", "", "", "", "", "", "", "")
+	let bionomialQuestionFour = new Question("Find the term independent of $x$ in the expansion of $({3x^2 \\over 2} + {2 \\over 3x})^9$", "", "", "", "", "", "", "", "", "")
+	let bionomialQuestionFive = new Question("If the coefficients of the $3^{rd}$ and $4^{th}$ terms of $(2+x)^n$ are 240 and 160, find n.", "", "", "", "", "", "", "", "", "")
+	let bionomialQuestionSix = new Question("Given $(3+4x)^{13}$", "(a) Write down expressions for $T_{k+1}$ and $T_k$", "(b) Show that ${T_{k+1} \\over T_k} = {(14-k)4x \\over 3k}$", "(c) Hence show that when $x = {1 \\over 2}$, $T_6$ is the greatest term in the expansion.", "(d) Write the greatest term when $x = {1 \\over 2}$ in factored form.", "", "", "", "", "")
+	let bionomialQuestionSeven = new Question("A test consists of five multiple choice questions. Each question has four alternative answers. For each question only one of the alternative answers is correct. Huong randomly selects an answer to each of the five questions.", "(a) What is the probability that Huong selects three correct and two incorrect answers?", "(b) What is the probability that Huong selects three or more correct answers?", "(c) What is the probability that Huong selects at least one incorrect answer?", "", "", "", "", "", "")
+	let bionomialQuestionEight = new Question("Find the coefficient of $x^3$ in the expansion of $(2-5x+x^2)(1+x)^{11}$", "", "", "", "", "", "", "", "", "")
+	// Inverse Functions Questions
+	let inverseQuestionOne = new Question("Which is the inverse to $y = \\sqrt{ln(2x + 1)}$ for $x \\ge 0$ ?", "", "", "", "", "", "(A) $y = 2(e^{x^2} - 1)$", "(B) $y = {(e^x - 1)^2 \\over 2}$", "(C) $y = {e^{x^2} - 1 \\over 2}$", "(D) $y = 2e^{x^2} - 2$")
 
 	return [
 	polynomialQuestionOne,
@@ -146,6 +155,7 @@ function questionBank() {
 	inequalityQuestionFive,
 	calculusQuestionOne,
 	calculusQuestionTwo,
+	calculusQuestionThree,
 	trigQuestionOne,
 	trigQuestionTwo,
 	trigQuestionThree,
@@ -158,8 +168,15 @@ function questionBank() {
 	permCombQuestionSeven,
 	permCombQuestionEight,
 	permCombQuestionNine,
+	permCombQuestionTen,
 	bionomialQuestionOne,
 	bionomialQuestionTwo,
-	bionomialQuestionThree
+	bionomialQuestionThree,
+	bionomialQuestionFour,
+	bionomialQuestionFive,
+	bionomialQuestionSix,
+	bionomialQuestionSeven,
+	bionomialQuestionEight,
+	inverseQuestionOne
 	]
 }

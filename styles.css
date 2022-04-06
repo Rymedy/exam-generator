@@ -12,6 +12,7 @@ body {
 #examPaper {
 	font-family: Times New Roman;
 	padding-left: 5%;
+  padding-right: 20%;
 	padding-top: 2%;
 	font-size: 22px;
 }
