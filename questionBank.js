@@ -93,6 +93,7 @@ class Question {
 
 function questionBank() {
 	// (question, subQuestionOne, subQuestionTwo, subQuestionThree, subQuestionFour, subQuestionFive, answerOne, answerTwo, answerThree, answerFour)
+	// PRELIMINARY COURSE
 	// Polynomial Questions
 	let polynomialQuestionOne = new Question("When $g(x)$ is divided by $x^2 + x - 6$ the remainder is $7x + 13$ . What is the remainder when $g(x)$ is divided by $x + 3$ ?", "", "", "", "", "", "A. -8", "B. -5", "C. 34", "D. 55")
 	let polynomialQuestionTwo = new Question("if $ax^4 + 3x^3 - 48x^2 + 60x = 0$ has a double root at $x = 2$, find:", "(a) the value of $a$", "(b) the sum of the other 2 roots", "", "", "", "", "", "", "")
@@ -139,6 +140,14 @@ function questionBank() {
 	// Inverse Functions Questions
 	let inverseQuestionOne = new Question("Which is the inverse to $y = \\sqrt{ln(2x + 1)}$ for $x \\ge 0$ ?", "", "", "", "", "", "(A) $y = 2(e^{x^2} - 1)$", "(B) $y = {(e^x - 1)^2 \\over 2}$", "(C) $y = {e^{x^2} - 1 \\over 2}$", "(D) $y = 2e^{x^2} - 2$")
 
+	// HSC COURSE
+	// Mathematical Induction Questions
+	let mathInductionQuestionOne = new Question("Prove the following summation pattern using mathematical induction:", "(a) $\\sum_{r=1}^n rr!=(n+1)!-1$", "(b) $2\\times 1!+5\\times 2!+10\\times 3!+...+(n^2+1)n!=n(n+1)!$", "", "", "", "", "", "", "")
+	let mathInductionQuestionTwo = new Question("Prove by mathematical induction that:", "(a) $3^{4n}-1$ is divisible by $80$, for all positive integer values of n.", "(b) $3^{3n}+2^{n+2}$ is divisible by $5$, for all positive integer values of n.", "(c) $13\\times 6^n+2$ is divisible by $10$, for all positive integer values of n.", "", "", "", "", "", "")
+	let trigQuestionFour = new Question("Solve the following equations for $0^o \\le \\theta \\le 360^o$", "(a) $2tan{\\theta \\over 2} = -3$", "(b) $sin(2\\theta - 30^o) = {\\sqrt{3} \\over 2}$", "(c) $6sin^2\\theta - cos\\theta - 5 = 0$", "(d) $2cosec^2\\theta = 3cot\\theta + 1$", "", "", "", "", "")
+	let trigQuestionFive = new Question("Solve the following equations for $0^o \\le \\theta \\le 360^o$", "(a) $1+cosA = 3sin{A \\over 2}$", "(b) $2cos^2 2\\theta - 3sin2\\theta - 3 = 0$", "(c) $4sinx-3cosx=2$", "(d) $\\sqrt{3} cosx - sinx = 1$", "", "", "", "", "")
+	let trigQuestionSix = new Question("Using 't' substitution, solve the following equations for $0^o \\le \\theta \\le 360^o$", "(a) $4sin\\theta - 3cos\\theta = 2$", "(b) $3sinx - \\sqrt{3}cosx = \\sqrt{3}$", "", "", "", "", "", "", "")
+
 	return [
 	polynomialQuestionOne,
 	polynomialQuestionTwo,
@@ -177,6 +186,11 @@ function questionBank() {
 	bionomialQuestionSix,
 	bionomialQuestionSeven,
 	bionomialQuestionEight,
-	inverseQuestionOne
+	inverseQuestionOne,
+	mathInductionQuestionOne,
+	mathInductionQuestionTwo,
+	trigQuestionFour,
+	trigQuestionFive,
+	trigQuestionSix
 	]
 }
