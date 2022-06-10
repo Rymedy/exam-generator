@@ -22,4 +22,6 @@ function deleteChild() {
         child = examPaper.lastElementChild;
     }
 }
+// Initiate MathJax Onload
+MathJax.typeset();
 // createExam();
