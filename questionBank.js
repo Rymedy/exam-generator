@@ -148,6 +148,13 @@ function questionBank() {
 	let trigQuestionFive = new Question("Solve the following equations for $0^o \\le \\theta \\le 360^o$", "(a) $1+cosA = 3sin{A \\over 2}$", "(b) $2cos^2 2\\theta - 3sin2\\theta - 3 = 0$", "(c) $4sinx-3cosx=2$", "(d) $\\sqrt{3} cosx - sinx = 1$", "", "", "", "", "")
 	let trigQuestionSix = new Question("Using 't' substitution, solve the following equations for $0^o \\le \\theta \\le 360^o$", "(a) $4sin\\theta - 3cos\\theta = 2$", "(b) $3sinx - \\sqrt{3}cosx = \\sqrt{3}$", "", "", "", "", "", "", "")
 
+	// Calculus Questions
+	let calculusQuestionFour = new Question("Verify by differentiation that $x=Ae^{st}$ is a $sol^n$ of ${d^2x \\over dt^2} - 5{dx \\over dt} + 6x = 0,  x(0)=1$ and ${dx \\over dt}(0)=2$, for suitable values of $x$.", "", "", "", "", "", "", "", "", "")
+	let calculusQuestionFive = new Question("Find the order and degree of the differential equations:", "(a) ${dy \\over dx} = (1+0.5cosx)^3$", "(b) $[{dy \\over dx}]^2 - 3{dy \\over dx} = 2x+4$", "(c) $[{dy \\over dx}]^2 = 3x^2+6$", "(d) ${d^2y \\over dx^2} + 3x = [{dy \\over dx}]^2$", "", "", "", "", "")
+	let calculusQuestionSix = new Question("Construct the direction field ${dy \\over dx} = xy$ for $-2 \\le x \\le 2$", "", "", "", "", "", "", "", "", "")
+	let calculusQuestionSeven = new Question("Find the particular solution of ${dy \\over dt} = -r(y-S)$, given that $y(0)=z$ with $r$, $S>0$ positive constants.", "", "", "", "", "", "", "", "", "")
+	let calculusQuestionEight = new Question("By showing that ${2 \\over (1-y)(1+y)} = {1 \\over (1-y)} + {1 \\over (1+y)}$, find the general solution of ${dy \\over dx} = (1-y)(1+y)$, given that $y(0) = z$", "", "", "", "", "", "", "", "", "")
+
 	return [
 	polynomialQuestionOne,
 	polynomialQuestionTwo,
@@ -191,6 +198,11 @@ function questionBank() {
 	mathInductionQuestionTwo,
 	trigQuestionFour,
 	trigQuestionFive,
-	trigQuestionSix
+	trigQuestionSix,
+	calculusQuestionFour,
+	calculusQuestionFive,
+	calculusQuestionSix,
+	calculusQuestionSeven,
+	calculusQuestionEight
 	]
 }
